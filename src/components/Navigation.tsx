@@ -27,7 +27,7 @@ const Navigation = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'glass-card m-4 rounded-2xl cyber-glow' 
+        ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg' 
         : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-6">
@@ -44,10 +44,9 @@ const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-300 hover:text-blue-400 transition-colors duration-300 font-medium relative group"
+                  className="text-gray-300 hover:text-blue-400 transition-colors font-medium"
                 >
                   {item.name}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-sky-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>
               ))}
             </div>
@@ -57,7 +56,7 @@ const Navigation = () => {
           <div className="hidden md:block">
             <Button 
               variant="outline"
-              className="border-blue-500/50 text-blue-300 hover:bg-blue-500/10 rounded-full"
+              className="border-blue-500 text-blue-300 hover:bg-blue-500/10 rounded-lg"
             >
               Hire Me
             </Button>
@@ -78,13 +77,13 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 animate-slide-down">
+          <div className="md:hidden py-4">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-300 hover:text-blue-400 transition-colors duration-300 font-medium py-2"
+                  className="text-gray-300 hover:text-blue-400 transition-colors font-medium py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.name}
@@ -92,7 +91,7 @@ const Navigation = () => {
               ))}
               <Button 
                 variant="outline"
-                className="border-blue-500/50 text-blue-300 hover:bg-blue-500/10 rounded-full mt-4"
+                className="border-blue-500 text-blue-300 hover:bg-blue-500/10 rounded-lg mt-4"
               >
                 Hire Me
               </Button>

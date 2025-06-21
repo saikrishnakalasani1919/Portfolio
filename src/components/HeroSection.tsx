@@ -4,94 +4,75 @@ import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-blue-600/10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-sky-600/10 rounded-full blur-3xl animate-float animation-delay-400"></div>
-        <div className="absolute bottom-1/4 left-1/3 w-80 h-80 bg-cyan-600/10 rounded-full blur-3xl animate-float animation-delay-800"></div>
-      </div>
-
-      {/* 3D floating elements */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 left-20 w-4 h-4 bg-gradient-to-r from-blue-400 to-sky-400 rounded-full animate-float animation-delay-200"></div>
-        <div className="absolute top-40 right-32 w-3 h-3 bg-gradient-to-r from-sky-400 to-cyan-400 rounded-full animate-float animation-delay-600"></div>
-        <div className="absolute bottom-32 left-1/4 w-5 h-5 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full animate-float"></div>
-        <div className="absolute bottom-20 right-20 w-2 h-2 bg-gradient-to-r from-blue-400 to-sky-400 rounded-full animate-float animation-delay-400"></div>
-      </div>
-
-      <div className="container mx-auto px-6 relative z-10">
+    <section className="min-h-screen flex items-center justify-center">
+      <div className="container mx-auto px-6">
         <div className="text-center max-w-4xl mx-auto">
-          {/* Animated greeting */}
-          <div className="mb-6 animate-slide-down">
-            <span className="inline-block px-6 py-2 bg-gradient-to-r from-blue-600/20 to-sky-600/20 backdrop-blur-xl rounded-full border border-blue-500/30 text-sm font-medium text-blue-300">
-              ✨ Welcome to my digital space
+          {/* Simple greeting */}
+          <div className="mb-6">
+            <span className="inline-block px-4 py-2 bg-blue-900/50 rounded-full text-sm font-medium text-blue-300">
+              Welcome to my portfolio
             </span>
           </div>
 
-          {/* Main heading with gradient text */}
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 animate-slide-up">
-            <span className="block text-gradient">Creative</span>
-            <span className="block text-white">Developer</span>
+          {/* Main heading */}
+          <h1 className="text-5xl md:text-7xl font-bold mb-6">
+            <span className="block text-gradient">John Doe</span>
+            <span className="block text-white">Web Developer</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed animate-slide-up animation-delay-200">
-            I craft exceptional digital experiences through innovative design and cutting-edge technology
+          <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            I create modern websites and web applications using the latest technologies
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-slide-up animation-delay-400">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-blue-600 to-sky-600 hover:from-blue-700 hover:to-sky-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg"
             >
               View My Work
             </Button>
             <Button 
               variant="outline" 
               size="lg"
-              className="border-2 border-blue-500/50 text-blue-300 hover:bg-blue-500/10 px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105"
+              className="border-blue-500 text-blue-300 hover:bg-blue-500/10 px-8 py-3 rounded-lg"
             >
-              Let's Connect
+              Contact Me
             </Button>
           </div>
 
           {/* Social Links */}
-          <div className="flex justify-center gap-6 mb-12 animate-scale-in animation-delay-600">
+          <div className="flex justify-center gap-6 mb-12">
             <a 
               href="#" 
-              className="p-3 glass-card hover-lift cyber-glow transition-all duration-300 group"
+              className="p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
               aria-label="GitHub"
             >
-              <Github className="w-6 h-6 text-gray-300 group-hover:text-blue-400 transition-colors duration-300" />
+              <Github className="w-6 h-6 text-gray-300" />
             </a>
             <a 
               href="#" 
-              className="p-3 glass-card hover-lift cyber-glow transition-all duration-300 group"
+              className="p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
               aria-label="LinkedIn"
             >
-              <Linkedin className="w-6 h-6 text-gray-300 group-hover:text-sky-400 transition-colors duration-300" />
+              <Linkedin className="w-6 h-6 text-gray-300" />
             </a>
             <a 
               href="#" 
-              className="p-3 glass-card hover-lift cyber-glow transition-all duration-300 group"
+              className="p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
               aria-label="Email"
             >
-              <Mail className="w-6 h-6 text-gray-300 group-hover:text-cyan-400 transition-colors duration-300" />
+              <Mail className="w-6 h-6 text-gray-300" />
             </a>
           </div>
 
-          {/* Scroll indicator */}
-          <div className="animate-bounce">
-            <ArrowDown className="w-8 h-8 text-blue-400 mx-auto animate-glow" />
+          {/* Simple scroll indicator */}
+          <div>
+            <ArrowDown className="w-6 h-6 text-blue-400 mx-auto" />
           </div>
         </div>
       </div>
-
-      {/* Geometric decorations */}
-      <div className="absolute top-20 right-20 w-20 h-20 border-2 border-blue-500/30 rotate-45 animate-rotate-3d hidden lg:block"></div>
-      <div className="absolute bottom-20 left-20 w-16 h-16 border-2 border-sky-500/30 rotate-12 animate-float hidden lg:block"></div>
     </section>
   );
 };
