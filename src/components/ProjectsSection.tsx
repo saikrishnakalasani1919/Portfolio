@@ -6,27 +6,19 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Website",
-      description: "A simple e-commerce website built with React and CSS. Features product listing and shopping cart functionality.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-      tech: ["React", "CSS", "JavaScript"],
+      title: "Unified Family Finance Tracker",
+      description: "A comprehensive family finance management system to track expenses, manage budgets, and monitor financial goals.",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop",
+      tech: ["Python", "Flask", "HTML", "CSS", "JavaScript", "Bootstrap"],
       category: "Web App"
     },
     {
       id: 2,
-      title: "Todo List App",
-      description: "A basic todo list application with add, edit, and delete functionality. Built to practice React fundamentals.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      tech: ["React", "HTML", "CSS"],
-      category: "Practice"
-    },
-    {
-      id: 3,
-      title: "Weather App",
-      description: "A simple weather application that shows current weather information using a weather API.",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
-      tech: ["JavaScript", "API", "CSS"],
-      category: "Web App"
+      title: "Campus Bridge Unified Learning Platform",
+      description: "An integrated learning platform designed to connect students, faculty, and resources in a unified educational environment.",
+      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
+      tech: ["Python", "Flask", "HTML", "CSS", "JavaScript", "Bootstrap"],
+      category: "Education"
     }
   ];
 
@@ -43,12 +35,12 @@ const ProjectsSection = () => {
             <span className="text-gradient">Work</span>
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Here are some projects I've worked on while learning web development
+            Here are some projects I've built using Python Flask and web technologies
           </p>
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {projects.map((project) => (
             <div
               key={project.id}

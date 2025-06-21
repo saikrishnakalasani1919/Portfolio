@@ -1,25 +1,31 @@
 
-import { Code, Database, Palette, Smartphone, Globe, Zap } from 'lucide-react';
+import { Code, Database, Palette, BookOpen } from 'lucide-react';
 
 const SkillsSection = () => {
   const skillCategories = [
     {
       icon: Code,
       title: "Frontend",
-      skills: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"],
+      skills: ["HTML", "CSS", "JavaScript", "React"],
       color: "bg-blue-600"
     },
     {
       icon: Database,
       title: "Backend",
-      skills: ["Node.js", "Express", "MongoDB", "SQL"],
+      skills: ["Flask", "SQL", "Node.js"],
       color: "bg-sky-600"
     },
     {
       icon: Palette,
-      title: "Design",
-      skills: ["Figma", "Photoshop", "UI/UX Design"],
+      title: "Languages",
+      skills: ["Python", "Java"],
       color: "bg-blue-500"
+    },
+    {
+      icon: BookOpen,
+      title: "CS Fundamentals",
+      skills: ["Data Structures", "Algorithms"],
+      color: "bg-sky-500"
     }
   ];
 
@@ -36,12 +42,12 @@ const SkillsSection = () => {
             <span className="text-gradient">Know</span>
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Technologies and tools I'm learning and working with
+            Technologies and programming concepts I work with
           </p>
         </div>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {skillCategories.map((category) => {
             const IconComponent = category.icon;
             return (
@@ -76,9 +82,9 @@ const SkillsSection = () => {
         <div className="mt-16">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { number: "10+", label: "Projects" },
+              { number: "2+", label: "Projects" },
               { number: "1+", label: "Years Learning" },
-              { number: "5+", label: "Technologies" },
+              { number: "6+", label: "Technologies" },
               { number: "Always", label: "Learning" }
             ].map((stat) => (
               <div key={stat.label}>

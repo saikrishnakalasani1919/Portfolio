@@ -31,11 +31,11 @@ const ContactSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Info */}
           <div className="space-y-8">
-            <div className="glass-card p-8 hover-lift cyber-glow animate-slide-up">
+            <div className="glass-card p-8 hover:shadow-xl transition-shadow">
               <h3 className="text-2xl font-bold text-white mb-6">Get in touch</h3>
               <p className="text-gray-300 mb-8 leading-relaxed">
-                I'm always excited to work on new projects and collaborate with amazing people. 
-                Whether you have a project idea, need technical consultation, or just want to say hello, 
+                I'm passionate about Python development and web technologies. 
+                Whether you have a project idea, need technical consultation, or want to collaborate, 
                 I'd love to hear from you.
               </p>
 
@@ -46,7 +46,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="text-white font-medium">Email</p>
-                    <p className="text-gray-300">hello@portfolio.dev</p>
+                    <p className="text-gray-300">saikrishnakalasani@gmail.com</p>
                   </div>
                 </div>
 
@@ -56,7 +56,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="text-white font-medium">Phone</p>
-                    <p className="text-gray-300">+1 (555) 123-4567</p>
+                    <p className="text-gray-300">+91 9390781193</p>
                   </div>
                 </div>
 
@@ -66,7 +66,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="text-white font-medium">Location</p>
-                    <p className="text-gray-300">San Francisco, CA</p>
+                    <p className="text-gray-300">India</p>
                   </div>
                 </div>
               </div>
@@ -74,7 +74,7 @@ const ContactSection = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="glass-card p-8 hover-lift cyber-glow animate-slide-up animation-delay-200">
+          <div className="glass-card p-8 hover:shadow-xl transition-shadow">
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>

@@ -16,13 +16,13 @@ const HeroSection = () => {
 
           {/* Main heading */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="block text-gradient">John Doe</span>
-            <span className="block text-white">Web Developer</span>
+            <span className="block text-gradient">Saikrishna Kalasani</span>
+            <span className="block text-white">Python & Web Developer</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            I create modern websites and web applications using the latest technologies
+            Passionate about Python development and creating modern web applications
           </p>
 
           {/* CTA Buttons */}
@@ -45,21 +45,25 @@ const HeroSection = () => {
           {/* Social Links */}
           <div className="flex justify-center gap-6 mb-12">
             <a 
-              href="#" 
+              href="https://github.com/saikrishnakalasani1919" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
               aria-label="GitHub"
             >
               <Github className="w-6 h-6 text-gray-300" />
             </a>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/saikrishna-kalasani/" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin className="w-6 h-6 text-gray-300" />
             </a>
             <a 
-              href="#" 
+              href="mailto:saikrishnakalasani@gmail.com" 
               className="p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
               aria-label="Email"
             >
