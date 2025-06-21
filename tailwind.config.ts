@@ -124,8 +124,8 @@ export default {
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-				'mesh-gradient': 'linear-gradient(45deg, #667eea 0%, #764ba2 100%)',
-				'cyber-gradient': 'linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%)'
+				'mesh-gradient': 'linear-gradient(45deg, #3b82f6 0%, #0ea5e9 100%)',
+				'cyber-gradient': 'linear-gradient(135deg, #3b82f6 0%, #0ea5e9 25%, #38bdf8 50%, #06b6d4 75%, #0891b2 100%)'
 			}
 		}
 	},

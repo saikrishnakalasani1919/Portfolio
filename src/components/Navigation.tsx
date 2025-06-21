@@ -44,10 +44,10 @@ const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-300 hover:text-purple-400 transition-colors duration-300 font-medium relative group"
+                  className="text-gray-300 hover:text-blue-400 transition-colors duration-300 font-medium relative group"
                 >
                   {item.name}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-pink-400 transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-sky-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>
               ))}
             </div>
@@ -57,7 +57,7 @@ const Navigation = () => {
           <div className="hidden md:block">
             <Button 
               variant="outline"
-              className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 rounded-full"
+              className="border-blue-500/50 text-blue-300 hover:bg-blue-500/10 rounded-full"
             >
               Hire Me
             </Button>
@@ -69,7 +69,7 @@ const Navigation = () => {
               variant="ghost"
               size="sm"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-gray-300 hover:text-purple-400"
+              className="text-gray-300 hover:text-blue-400"
             >
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </Button>
@@ -84,7 +84,7 @@ const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-300 hover:text-purple-400 transition-colors duration-300 font-medium py-2"
+                  className="text-gray-300 hover:text-blue-400 transition-colors duration-300 font-medium py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.name}
@@ -92,7 +92,7 @@ const Navigation = () => {
               ))}
               <Button 
                 variant="outline"
-                className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 rounded-full mt-4"
+                className="border-blue-500/50 text-blue-300 hover:bg-blue-500/10 rounded-full mt-4"
               >
                 Hire Me
               </Button>

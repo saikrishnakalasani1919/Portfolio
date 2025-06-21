@@ -7,37 +7,37 @@ const SkillsSection = () => {
       icon: Code,
       title: "Frontend Development",
       skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vue.js", "SASS"],
-      color: "from-purple-600 to-pink-600"
+      color: "from-blue-600 to-sky-600"
     },
     {
       icon: Database,
       title: "Backend Development",
       skills: ["Node.js", "Python", "PostgreSQL", "MongoDB", "Redis", "GraphQL"],
-      color: "from-blue-600 to-cyan-600"
+      color: "from-sky-600 to-cyan-600"
     },
     {
       icon: Smartphone,
       title: "Mobile Development",
       skills: ["React Native", "Flutter", "iOS", "Android", "Firebase", "Redux"],
-      color: "from-green-600 to-teal-600"
+      color: "from-cyan-600 to-blue-600"
     },
     {
       icon: Palette,
       title: "UI/UX Design",
       skills: ["Figma", "Adobe XD", "Photoshop", "Illustrator", "Sketch", "Framer"],
-      color: "from-pink-600 to-rose-600"
+      color: "from-blue-500 to-sky-500"
     },
     {
       icon: Globe,
       title: "DevOps & Cloud",
       skills: ["AWS", "Docker", "Kubernetes", "CI/CD", "Terraform", "Nginx"],
-      color: "from-orange-600 to-yellow-600"
+      color: "from-sky-500 to-cyan-500"
     },
     {
       icon: Zap,
       title: "Emerging Tech",
       skills: ["Three.js", "WebGL", "AI/ML", "Blockchain", "WebRTC", "PWA"],
-      color: "from-indigo-600 to-purple-600"
+      color: "from-cyan-500 to-blue-500"
     }
   ];
 
@@ -45,14 +45,14 @@ const SkillsSection = () => {
     <section id="skills" className="py-24 relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-72 h-72 bg-purple-600/5 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl animate-float animation-delay-400"></div>
+        <div className="absolute top-0 left-1/4 w-72 h-72 bg-blue-600/5 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-sky-600/5 rounded-full blur-3xl animate-float animation-delay-400"></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-block px-6 py-2 bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-xl rounded-full border border-purple-500/30 text-sm font-medium text-purple-300 mb-6">
+          <div className="inline-block px-6 py-2 bg-gradient-to-r from-blue-600/20 to-sky-600/20 backdrop-blur-xl rounded-full border border-blue-500/30 text-sm font-medium text-blue-300 mb-6">
             🚀 Expertise
           </div>
           <h2 className="text-5xl md:text-6xl font-bold mb-6">

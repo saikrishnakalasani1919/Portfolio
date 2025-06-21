@@ -9,14 +9,14 @@ const ContactSection = () => {
     <section id="contact" className="py-24 relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/2 left-0 w-96 h-96 bg-gradient-to-r from-purple-600/10 to-transparent rounded-full blur-3xl"></div>
-        <div className="absolute top-0 right-0 w-72 h-72 bg-gradient-to-l from-pink-600/10 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-0 w-96 h-96 bg-gradient-to-r from-blue-600/10 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute top-0 right-0 w-72 h-72 bg-gradient-to-l from-sky-600/10 to-transparent rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-block px-6 py-2 bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-xl rounded-full border border-purple-500/30 text-sm font-medium text-purple-300 mb-6">
+          <div className="inline-block px-6 py-2 bg-gradient-to-r from-blue-600/20 to-sky-600/20 backdrop-blur-xl rounded-full border border-blue-500/30 text-sm font-medium text-blue-300 mb-6">
             📧 Get In Touch
           </div>
           <h2 className="text-5xl md:text-6xl font-bold mb-6">
@@ -41,7 +41,7 @@ const ContactSection = () => {
 
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl p-3">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-sky-600 rounded-xl p-3">
                     <Mail className="w-full h-full text-white" />
                   </div>
                   <div>
@@ -51,7 +51,7 @@ const ContactSection = () => {
                 </div>
 
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-xl p-3">
+                  <div className="w-12 h-12 bg-gradient-to-r from-sky-600 to-cyan-600 rounded-xl p-3">
                     <Phone className="w-full h-full text-white" />
                   </div>
                   <div>
@@ -61,7 +61,7 @@ const ContactSection = () => {
                 </div>
 
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-r from-green-600 to-teal-600 rounded-xl p-3">
+                  <div className="w-12 h-12 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-xl p-3">
                     <MapPin className="w-full h-full text-white" />
                   </div>
                   <div>
@@ -84,7 +84,7 @@ const ContactSection = () => {
                   <Input
                     id="firstName"
                     type="text"
-                    className="bg-gray-800/50 border-gray-700/50 text-white placeholder-gray-400 focus:border-purple-500 focus:ring-purple-500/20"
+                    className="bg-gray-800/50 border-gray-700/50 text-white placeholder-gray-400 focus:border-blue-500 focus:ring-blue-500/20"
                     placeholder="John"
                   />
                 </div>
@@ -95,7 +95,7 @@ const ContactSection = () => {
                   <Input
                     id="lastName"
                     type="text"
-                    className="bg-gray-800/50 border-gray-700/50 text-white placeholder-gray-400 focus:border-purple-500 focus:ring-purple-500/20"
+                    className="bg-gray-800/50 border-gray-700/50 text-white placeholder-gray-400 focus:border-blue-500 focus:ring-blue-500/20"
                     placeholder="Doe"
                   />
                 </div>
@@ -108,7 +108,7 @@ const ContactSection = () => {
                 <Input
                   id="email"
                   type="email"
-                  className="bg-gray-800/50 border-gray-700/50 text-white placeholder-gray-400 focus:border-purple-500 focus:ring-purple-500/20"
+                  className="bg-gray-800/50 border-gray-700/50 text-white placeholder-gray-400 focus:border-blue-500 focus:ring-blue-500/20"
                   placeholder="john@example.com"
                 />
               </div>
@@ -120,7 +120,7 @@ const ContactSection = () => {
                 <Input
                   id="subject"
                   type="text"
-                  className="bg-gray-800/50 border-gray-700/50 text-white placeholder-gray-400 focus:border-purple-500 focus:ring-purple-500/20"
+                  className="bg-gray-800/50 border-gray-700/50 text-white placeholder-gray-400 focus:border-blue-500 focus:ring-blue-500/20"
                   placeholder="Project Discussion"
                 />
               </div>
@@ -132,14 +132,14 @@ const ContactSection = () => {
                 <Textarea
                   id="message"
                   rows={5}
-                  className="bg-gray-800/50 border-gray-700/50 text-white placeholder-gray-400 focus:border-purple-500 focus:ring-purple-500/20 resize-none"
+                  className="bg-gray-800/50 border-gray-700/50 text-white placeholder-gray-400 focus:border-blue-500 focus:ring-blue-500/20 resize-none"
                   placeholder="Tell me about your project..."
                 />
               </div>
 
               <Button
                 type="submit"
-                className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25"
+                className="w-full bg-gradient-to-r from-blue-600 to-sky-600 hover:from-blue-700 hover:to-sky-700 text-white py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
               >
                 <Send className="w-5 h-5 mr-2" />
                 Send Message

@@ -58,14 +58,14 @@ const ProjectsSection = () => {
     <section id="projects" className="py-24 relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 right-0 w-96 h-96 bg-gradient-to-l from-purple-600/5 to-transparent rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-gradient-to-r from-blue-600/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 right-0 w-96 h-96 bg-gradient-to-l from-blue-600/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-gradient-to-r from-sky-600/5 to-transparent rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-block px-6 py-2 bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-xl rounded-full border border-purple-500/30 text-sm font-medium text-purple-300 mb-6">
+          <div className="inline-block px-6 py-2 bg-gradient-to-r from-blue-600/20 to-sky-600/20 backdrop-blur-xl rounded-full border border-blue-500/30 text-sm font-medium text-blue-300 mb-6">
             💼 My Work
           </div>
           <h2 className="text-5xl md:text-6xl font-bold mb-6">
@@ -96,7 +96,7 @@ const ProjectsSection = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                     <div className="absolute top-4 right-4">
-                      <span className="px-3 py-1 bg-purple-600/80 backdrop-blur-sm rounded-full text-xs font-medium text-white">
+                      <span className="px-3 py-1 bg-blue-600/80 backdrop-blur-sm rounded-full text-xs font-medium text-white">
                         {project.category}
                       </span>
                     </div>
@@ -127,7 +127,7 @@ const ProjectsSection = () => {
                     <div className="flex gap-3 pt-4">
                       <Button
                         size="sm"
-                        className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-full flex-1"
+                        className="bg-gradient-to-r from-blue-600 to-sky-600 hover:from-blue-700 hover:to-sky-700 text-white rounded-full flex-1"
                       >
                         <ExternalLink className="w-4 h-4 mr-2" />
                         Live Demo
@@ -135,7 +135,7 @@ const ProjectsSection = () => {
                       <Button
                         size="sm"
                         variant="outline"
-                        className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 rounded-full"
+                        className="border-blue-500/50 text-blue-300 hover:bg-blue-500/10 rounded-full"
                       >
                         <Github className="w-4 h-4" />
                       </Button>
@@ -152,7 +152,7 @@ const ProjectsSection = () => {
           <Button
             size="lg"
             variant="outline"
-            className="border-2 border-purple-500/50 text-purple-300 hover:bg-purple-500/10 px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105"
+            className="border-2 border-blue-500/50 text-blue-300 hover:bg-blue-500/10 px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105"
           >
             View All Projects
           </Button>
