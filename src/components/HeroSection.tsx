@@ -1,11 +1,17 @@
+
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
-  const handleResumeDownload = () => {
-    const resumeUrl = 'https://drive.google.com/uc?export=download&id=1sK9jwz8pPVhAcAWo6wrO_QYt4nnqlF8Z';
+  const handleResumeClick = () => {
+    // Open resume in new tab for viewing
+    const viewUrl = 'https://drive.google.com/file/d/1sK9jwz8pPVhAcAWo6wrO_QYt4nnqlF8Z/view?usp=sharing';
+    window.open(viewUrl, '_blank');
+    
+    // Also trigger download
+    const downloadUrl = 'https://drive.google.com/uc?export=download&id=1sK9jwz8pPVhAcAWo6wrO_QYt4nnqlF8Z';
     const link = document.createElement('a');
-    link.href = resumeUrl;
+    link.href = downloadUrl;
     link.download = 'Saikrishna_Kalasani_Resume.pdf';
     document.body.appendChild(link);
     link.click();
@@ -37,7 +43,7 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button 
               size="lg" 
-              onClick={handleResumeDownload}
+              onClick={handleResumeClick}
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg"
             >
               View My Resume
