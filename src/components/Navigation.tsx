@@ -75,14 +75,17 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4">
+          <div className="md:hidden py-4 bg-gray-900/95 backdrop-blur-sm rounded-lg mt-2">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  onClick={item.onClick}
-                  className="text-gray-300 hover:text-blue-400 transition-colors font-medium py-2 cursor-pointer"
+                  onClick={() => {
+                    if (item.onClick) item.onClick();
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="text-gray-300 hover:text-blue-400 transition-colors font-medium py-2 px-4 cursor-pointer"
                 >
                   {item.name}
                 </a>
