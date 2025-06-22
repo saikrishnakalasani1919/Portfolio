@@ -1,11 +1,9 @@
-
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
   const handleResumeDownload = () => {
-    // You can replace this URL with your actual resume link
-    const resumeUrl = 'YOUR_RESUME_LINK_HERE';
+    const resumeUrl = 'https://drive.google.com/uc?export=download&id=1sK9jwz8pPVhAcAWo6wrO_QYt4nnqlF8Z';
     const link = document.createElement('a');
     link.href = resumeUrl;
     link.download = 'Saikrishna_Kalasani_Resume.pdf';
