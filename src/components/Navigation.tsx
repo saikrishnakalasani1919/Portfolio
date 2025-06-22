@@ -1,7 +1,6 @@
 
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,8 +15,16 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+    setIsMobileMenuOpen(false);
+  };
+
   const navItems = [
-    { name: 'Home', href: '#home' },
+    { name: 'Home', href: '#home', onClick: scrollToTop },
     { name: 'About', href: '#about' },
     { name: 'Projects', href: '#projects' },
     { name: 'Skills', href: '#skills' },
@@ -44,7 +51,8 @@ const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-300 hover:text-blue-400 transition-colors font-medium"
+                  onClick={item.onClick}
+                  className="text-gray-300 hover:text-blue-400 transition-colors font-medium cursor-pointer"
                 >
                   {item.name}
                 </a>
@@ -52,26 +60,14 @@ const Navigation = () => {
             </div>
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <Button 
-              variant="outline"
-              className="border-blue-500 text-blue-300 hover:bg-blue-500/10 rounded-lg"
-            >
-              Hire Me
-            </Button>
-          </div>
-
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="sm"
+            <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-gray-300 hover:text-blue-400"
             >
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </Button>
+            </button>
           </div>
         </div>
 
@@ -83,18 +79,12 @@ const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-300 hover:text-blue-400 transition-colors font-medium py-2"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={item.onClick}
+                  className="text-gray-300 hover:text-blue-400 transition-colors font-medium py-2 cursor-pointer"
                 >
                   {item.name}
                 </a>
               ))}
-              <Button 
-                variant="outline"
-                className="border-blue-500 text-blue-300 hover:bg-blue-500/10 rounded-lg mt-4"
-              >
-                Hire Me
-              </Button>
             </div>
           </div>
         )}

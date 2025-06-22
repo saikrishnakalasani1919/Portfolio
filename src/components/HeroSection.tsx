@@ -3,6 +3,17 @@ import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
+  const handleResumeDownload = () => {
+    // You can replace this URL with your actual resume link
+    const resumeUrl = 'YOUR_RESUME_LINK_HERE';
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'Saikrishna_Kalasani_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center">
       <div className="container mx-auto px-6">
@@ -17,7 +28,6 @@ const HeroSection = () => {
           {/* Main heading */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="block text-gradient">Saikrishna Kalasani</span>
-            <span className="block text-white">Python & Web Developer</span>
           </h1>
 
           {/* Subtitle */}
@@ -29,16 +39,10 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button 
               size="lg" 
+              onClick={handleResumeDownload}
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg"
             >
-              View My Work
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-blue-500 text-blue-300 hover:bg-blue-500/10 px-8 py-3 rounded-lg"
-            >
-              Contact Me
+              View My Resume
             </Button>
           </div>
 

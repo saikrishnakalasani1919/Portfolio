@@ -1,31 +1,37 @@
 
-import { Code, Database, Palette, BookOpen } from 'lucide-react';
+import { Code, Database, Palette, BookOpen, HardDrive } from 'lucide-react';
 
 const SkillsSection = () => {
   const skillCategories = [
     {
       icon: Code,
       title: "Frontend",
-      skills: ["HTML", "CSS", "JavaScript", "React"],
+      skills: ["HTML", "CSS", "React"],
       color: "bg-blue-600"
     },
     {
       icon: Database,
       title: "Backend",
-      skills: ["Flask", "SQL", "Node.js"],
+      skills: ["Flask", "Node.js"],
       color: "bg-sky-600"
     },
     {
       icon: Palette,
       title: "Languages",
-      skills: ["Python", "Java"],
+      skills: ["Python", "Java", "JavaScript"],
       color: "bg-blue-500"
+    },
+    {
+      icon: HardDrive,
+      title: "Databases",
+      skills: ["SQL"],
+      color: "bg-sky-500"
     },
     {
       icon: BookOpen,
       title: "CS Fundamentals",
       skills: ["Data Structures", "Algorithms"],
-      color: "bg-sky-500"
+      color: "bg-blue-400"
     }
   ];
 
@@ -47,7 +53,7 @@ const SkillsSection = () => {
         </div>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {skillCategories.map((category) => {
             const IconComponent = category.icon;
             return (

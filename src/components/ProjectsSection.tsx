@@ -9,16 +9,18 @@ const ProjectsSection = () => {
       title: "Unified Family Finance Tracker",
       description: "A comprehensive family finance management system to track expenses, manage budgets, and monitor financial goals.",
       image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop",
-      tech: ["Python", "Flask", "HTML", "CSS", "JavaScript", "Bootstrap"],
-      category: "Web App"
+      tech: ["Python", "Flask", "HTML", "CSS", "Bootstrap"],
+      category: "Web App",
+      githubUrl: "https://github.com/saikrishnakalasani1919/Unified-Family-Finance-Tracker"
     },
     {
       id: 2,
       title: "Campus Bridge Unified Learning Platform",
       description: "An integrated learning platform designed to connect students, faculty, and resources in a unified educational environment.",
       image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
-      tech: ["Python", "Flask", "HTML", "CSS", "JavaScript", "Bootstrap"],
-      category: "Education"
+      tech: ["Python", "Flask", "HTML", "CSS", "Bootstrap"],
+      category: "Education",
+      githubUrl: "https://github.com/saikrishnakalasani1919/campus_lms"
     }
   ];
 
@@ -94,6 +96,7 @@ const ProjectsSection = () => {
                     size="sm"
                     variant="outline"
                     className="border-blue-500 text-blue-300 hover:bg-blue-500/10 rounded-lg"
+                    onClick={() => window.open(project.githubUrl, '_blank')}
                   >
                     <Github className="w-4 h-4" />
                   </Button>

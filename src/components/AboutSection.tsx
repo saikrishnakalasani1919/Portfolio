@@ -1,5 +1,5 @@
 
-import { Code, Heart, Target } from 'lucide-react';
+import { Code, MessageCircle, Target } from 'lucide-react';
 
 const AboutSection = () => {
   return (
@@ -22,18 +22,19 @@ const AboutSection = () => {
             {/* Left Side - Text Content */}
             <div className="space-y-6">
               <p className="text-lg text-gray-300 leading-relaxed">
-                Hi! I'm <span className="text-blue-400 font-semibold">Saikrishna Kalasani</span>, 
-                a passionate developer focused on creating meaningful web applications using Python and modern web technologies.
+                Hello! I'm <span className="text-blue-400 font-semibold">Saikrishna Kalasani</span>, 
+                a passionate and detail-oriented CSE (AI-ML) undergraduate at Mohan Babu University, expected to graduate in SEP 2026.
               </p>
               
               <p className="text-gray-300 leading-relaxed">
+                I'm a passionate developer focused on creating meaningful web applications using Python and modern web technologies. 
                 I enjoy building full-stack applications that solve real-world problems. 
                 My journey in programming started with Python, and I've expanded my skills 
                 to include web development frameworks like Flask and React.
               </p>
 
               <p className="text-gray-300 leading-relaxed">
-                When I'm not coding, I'm learning new technologies, working on personal projects, 
+                I'm learning new technologies, working on personal projects, 
                 or exploring ways to improve user experiences through clean, efficient code.
               </p>
             </div>
@@ -59,14 +60,14 @@ const AboutSection = () => {
               <div className="glass-card p-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-sky-600 rounded-lg p-3 flex-shrink-0">
-                    <Heart className="w-full h-full text-white" />
+                    <MessageCircle className="w-full h-full text-white" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white mb-2">
-                      User Experience
+                      Communication Skills
                     </h3>
                     <p className="text-gray-300 text-sm">
-                      Creating applications that are not just functional, but also intuitive and enjoyable to use.
+                      I have good communication skills and enjoy collaborating with teams to deliver effective solutions.
                     </p>
                   </div>
                 </div>

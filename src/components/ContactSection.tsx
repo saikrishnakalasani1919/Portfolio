@@ -1,8 +1,5 @@
 
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 const ContactSection = () => {
   return (
@@ -28,123 +25,47 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="max-w-2xl mx-auto">
           {/* Contact Info */}
-          <div className="space-y-8">
-            <div className="glass-card p-8 hover:shadow-xl transition-shadow">
-              <h3 className="text-2xl font-bold text-white mb-6">Get in touch</h3>
-              <p className="text-gray-300 mb-8 leading-relaxed">
-                I'm passionate about Python development and web technologies. 
-                Whether you have a project idea, need technical consultation, or want to collaborate, 
-                I'd love to hear from you.
-              </p>
+          <div className="glass-card p-8 hover:shadow-xl transition-shadow">
+            <h3 className="text-2xl font-bold text-white mb-6">Get in touch</h3>
+            <p className="text-gray-300 mb-8 leading-relaxed">
+              I'm passionate about Python development and web technologies. 
+              Whether you have a project idea or want to collaborate, 
+              I'd love to hear from you.
+            </p>
 
-              <div className="space-y-6">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-sky-600 rounded-xl p-3">
-                    <Mail className="w-full h-full text-white" />
-                  </div>
-                  <div>
-                    <p className="text-white font-medium">Email</p>
-                    <p className="text-gray-300">saikrishnakalasani@gmail.com</p>
-                  </div>
+            <div className="space-y-6">
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-sky-600 rounded-xl p-3">
+                  <Mail className="w-full h-full text-white" />
                 </div>
-
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-r from-sky-600 to-cyan-600 rounded-xl p-3">
-                    <Phone className="w-full h-full text-white" />
-                  </div>
-                  <div>
-                    <p className="text-white font-medium">Phone</p>
-                    <p className="text-gray-300">+91 9390781193</p>
-                  </div>
+                <div>
+                  <p className="text-white font-medium">Email</p>
+                  <p className="text-gray-300">saikrishnakalasani@gmail.com</p>
                 </div>
+              </div>
 
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-xl p-3">
-                    <MapPin className="w-full h-full text-white" />
-                  </div>
-                  <div>
-                    <p className="text-white font-medium">Location</p>
-                    <p className="text-gray-300">India</p>
-                  </div>
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-sky-600 to-cyan-600 rounded-xl p-3">
+                  <Phone className="w-full h-full text-white" />
+                </div>
+                <div>
+                  <p className="text-white font-medium">Phone</p>
+                  <p className="text-gray-300">+91 9390781193</p>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-xl p-3">
+                  <MapPin className="w-full h-full text-white" />
+                </div>
+                <div>
+                  <p className="text-white font-medium">Location</p>
+                  <p className="text-gray-300">India</p>
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* Contact Form */}
-          <div className="glass-card p-8 hover:shadow-xl transition-shadow">
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="firstName" className="block text-sm font-medium text-gray-300 mb-2">
-                    First Name
-                  </label>
-                  <Input
-                    id="firstName"
-                    type="text"
-                    className="bg-gray-800/50 border-gray-700/50 text-white placeholder-gray-400 focus:border-blue-500 focus:ring-blue-500/20"
-                    placeholder="John"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="lastName" className="block text-sm font-medium text-gray-300 mb-2">
-                    Last Name
-                  </label>
-                  <Input
-                    id="lastName"
-                    type="text"
-                    className="bg-gray-800/50 border-gray-700/50 text-white placeholder-gray-400 focus:border-blue-500 focus:ring-blue-500/20"
-                    placeholder="Doe"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
-                  Email
-                </label>
-                <Input
-                  id="email"
-                  type="email"
-                  className="bg-gray-800/50 border-gray-700/50 text-white placeholder-gray-400 focus:border-blue-500 focus:ring-blue-500/20"
-                  placeholder="john@example.com"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
-                  Subject
-                </label>
-                <Input
-                  id="subject"
-                  type="text"
-                  className="bg-gray-800/50 border-gray-700/50 text-white placeholder-gray-400 focus:border-blue-500 focus:ring-blue-500/20"
-                  placeholder="Project Discussion"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-                  Message
-                </label>
-                <Textarea
-                  id="message"
-                  rows={5}
-                  className="bg-gray-800/50 border-gray-700/50 text-white placeholder-gray-400 focus:border-blue-500 focus:ring-blue-500/20 resize-none"
-                  placeholder="Tell me about your project..."
-                />
-              </div>
-
-              <Button
-                type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-sky-600 hover:from-blue-700 hover:to-sky-700 text-white py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
-              >
-                <Send className="w-5 h-5 mr-2" />
-                Send Message
-              </Button>
-            </form>
           </div>
         </div>
       </div>
