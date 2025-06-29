@@ -22,7 +22,7 @@ const AboutSection = () => {
             {/* Left Side - Text Content */}
             <div className="space-y-6">
               <p className="text-lg text-gray-300 leading-relaxed">
-                Hello! I'm <span className="text-blue-400 font-semibold">Saikrishna Kalasani</span>, 
+                Hello! I'm <span className="text-blue-400 font-semibold">SAI KRISHNA KALASANI</span>, 
                 a passionate and detail-oriented CSE (AI-ML) undergraduate at Mohan Babu University, expected to graduate in SEP 2026.
               </p>
               
