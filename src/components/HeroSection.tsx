@@ -31,7 +31,7 @@ const HeroSection = () => {
 
           {/* Main heading */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="block text-gradient">Saikrishna Kalasani</span>
+            <span className="block text-gradient">SAI KRISHNA KALASANI</span>
           </h1>
 
           {/* Subtitle */}
