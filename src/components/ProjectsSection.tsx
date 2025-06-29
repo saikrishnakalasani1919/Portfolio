@@ -1,4 +1,3 @@
-
 import { ExternalLink, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -86,16 +85,13 @@ const ProjectsSection = () => {
                 {/* Action Buttons */}
                 <div className="flex gap-3 pt-4">
                   <Button
-                    size="sm"
-                    className="bg-blue-600 hover:bg-blue-700 text-white rounded-lg flex-1"
+                    className="bg-blue-600 hover:bg-blue-700 text-white rounded-lg flex-1 h-9 px-3 text-sm"
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
                     View
                   </Button>
                   <Button
-                    size="sm"
-                    variant="outline"
-                    className="border-blue-500 text-blue-300 hover:bg-blue-500/10 rounded-lg"
+                    className="border border-blue-500 bg-transparent text-blue-300 hover:bg-blue-500/10 rounded-lg h-9 px-3 text-sm transition-colors"
                     onClick={() => window.open(project.githubUrl, '_blank')}
                   >
                     <Github className="w-4 h-4" />
@@ -109,9 +105,7 @@ const ProjectsSection = () => {
         {/* View More Button */}
         <div className="text-center mt-12">
           <Button
-            size="lg"
-            variant="outline"
-            className="border-blue-500 text-blue-300 hover:bg-blue-500/10 px-8 py-3 rounded-lg"
+            className="border border-blue-500 bg-transparent text-blue-300 hover:bg-blue-500/10 px-8 py-3 rounded-lg h-11 text-base transition-colors"
           >
             View More Projects
           </Button>

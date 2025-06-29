@@ -1,4 +1,3 @@
-
 import { Code, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -61,8 +60,7 @@ const ProblemSolvingSection = () => {
                   <p className="text-gray-400">Problems Solved</p>
                 </div>
                 <Button 
-                  variant="outline" 
-                  className="w-full border-purple-500/30 text-purple-300 hover:bg-purple-600/10"
+                  className="w-full border border-purple-500/30 bg-transparent text-purple-300 hover:bg-purple-600/10 hover:text-purple-200 transition-colors"
                   onClick={() => window.open(platform.link, '_blank')}
                 >
                   View Profile

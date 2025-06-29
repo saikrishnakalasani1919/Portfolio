@@ -48,7 +48,7 @@ const SkillsSection = () => {
             <span className="text-gradient">Know</span>
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Technologies and programming concepts I work with
+            Technologies and programming concepts I work with.
           </p>
         </div>
 

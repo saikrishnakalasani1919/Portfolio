@@ -93,5 +93,9 @@ export default {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [
+		// Use dynamic import to avoid "Cannot find name 'require'" error in ESM/TypeScript
+		// @ts-expect-error - TypeScript may not recognize the import, but it's valid for Tailwind config
+		require("tailwindcss-animate") as any
+	],
 } satisfies Config;

@@ -1,4 +1,3 @@
-
 import { Briefcase, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
@@ -21,7 +20,7 @@ const ExperienceSection = () => {
           </div>
           <h2 className="text-5xl md:text-6xl font-bold mb-6">
             <span className="text-white">Work</span>{' '}
-            <span className="text-gradient">Experience</span>
+            <span className="text-gradient">Experience </span>
           </h2>
         </div>
 
@@ -43,7 +42,7 @@ const ExperienceSection = () => {
             <CardContent>
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button variant="outline" className="w-full border-blue-500/30 text-blue-300 hover:bg-blue-600/10">
+                  <Button className="w-full border border-blue-500/30 bg-transparent text-blue-300 hover:bg-blue-600/10 hover:text-blue-200 transition-colors">
                     View Details
                     <ExternalLink className="w-4 h-4 ml-2" />
                   </Button>

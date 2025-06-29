@@ -23,5 +23,5 @@ const NotFound = () => {
     </div>
   );
 };
-
+/*jdj*/
 export default NotFound;

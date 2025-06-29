@@ -35,7 +35,7 @@ const AboutSection = () => {
 
               <p className="text-gray-300 leading-relaxed">
                 I'm learning new technologies, working on personal projects, 
-                or exploring ways to improve user experiences through clean, efficient code.
+                or exploring ways to improve user experiences through clean, efficient code .
               </p>
             </div>
 

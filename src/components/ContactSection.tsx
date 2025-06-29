@@ -62,7 +62,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-white font-medium">Location</p>
-                  <p className="text-gray-300">India</p>
+                  <p className="text-gray-300">Tirupati , Andhra Pradesh , India</p>
                 </div>
               </div>
             </div>
